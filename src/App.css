@@ -1,0 +1,264 @@
+/* body{
+    margin: 0%;
+}
+
+
+@media(max-aspect-ratio:7/10){
+
+    .ChatPage{
+
+       
+        
+        display: flex;
+        justify-content: center;    
+        align-items: flex-start !important;
+        
+        }
+
+        .chatContainer{
+
+           
+            height: 100% !important;
+            width: 100% !important;
+        }
+        
+        .header{
+height: 10% !important;
+
+
+     }       
+            
+            
+            .header>h2{
+                margin: 6vm !important;
+                
+                font-size: 5vw !important;
+            }
+
+.headerimg{
+margin: 6vw !important;
+
+transform: scale(2) !important;
+
+
+}
+
+.header>img:hover{
+transform: scale(3.2) !important;
+
+}
+
+
+
+
+.chatBox{
+
+height: 80% !important;
+box-sizing: border-box !important;
+
+}
+
+
+.inputBox{
+
+height: 10% !important;
+
+}
+
+
+#chatInput{
+ 
+  
+    padding: 4vw !important;
+    font-size: 4vw !important;
+   
+
+}
+
+
+
+
+
+.messageBox{
+
+ 
+    
+    padding: 3vw !important;
+    margin: 3vw !important;
+    border-radius: 1.5vw !important;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 3.5vw !important;
+    }
+    
+    
+    .right{
+    
+        float: right;
+        background-color: crimson;
+        color: white;
+    }
+    
+    .left{
+        float: left;
+        background-color: rgb(95, 240, 107);
+        color: white;
+    
+    
+    }
+    
+
+
+
+
+
+
+
+
+    .JoinContainer{
+margin-top: 30vw !important;
+      
+        width: 100% !important;
+        
+  }
+ .JoinContainer>img{
+ width: 30vmax !important;
+}
+.JoinContainer>h1{
+
+font-size:6vw !important;
+width:55vw !important;
+
+padding: 1vw !important;
+
+
+
+}
+
+#joinInput{
+
+    width: 65vw !important;
+    padding: 4vw !important;
+
+    font-size: 5vw !important;
+    margin: 5vw !important;
+    box-sizing: border-box;
+}
+
+
+.join-btn{
+
+    font-size: 5vw !important;
+    width: 65vw !important;
+    padding: 4vw !important;
+ 
+
+
+
+
+
+}
+
+
+
+} */
+
+
+body {
+    margin: 0;
+}
+
+/* Media Query for Specific Aspect Ratio */
+@media(max-aspect-ratio: 7/10) {
+
+    .ChatPage {
+        display: flex;
+        justify-content: center;    
+        align-items: flex-start !important;  /* Start aligning for better layout */
+    }
+
+    .chatContainer {
+        height: 100% !important;
+        width: 100% !important;
+    }
+        
+    .header {
+        height: 10% !important;
+    }       
+            
+    .header > h2 {
+        margin: 6vm !important;  /* Consider correcting 'vm' to 'vmax' */
+        font-size: 5vw !important;
+    }
+
+    .headerimg {
+        margin: 6vw !important;
+        transform: scale(2) !important;
+    }
+
+    .header > img:hover {
+        transform: scale(3.2) !important;
+    }
+
+    .chatBox {
+        height: 80% !important;
+        box-sizing: border-box !important;
+    }
+
+    .inputBox {
+        height: 10% !important;
+    }
+
+    #chatInput {
+        padding: 4vw !important;
+        font-size: 4vw !important;
+    }
+
+    .messageBox {
+        padding: 3vw !important;
+        margin: 3vw !important;
+        border-radius: 1.5vw !important;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 3.5vw !important;
+    }
+
+    .right {
+        float: right;
+        background-color: crimson;  /* Maintain color consistency */
+        color: white;
+    }
+    
+    .left {
+        float: left;
+        background-color: rgb(95, 240, 107);  /* Maintain color consistency */
+        color: white;
+    }
+
+    .JoinContainer {
+        margin-top: 30vw !important;
+        width: 100% !important;
+    }
+    
+    .JoinContainer > img {
+        width: 30vmax !important;
+    }
+
+    .JoinContainer > h1 {
+        font-size: 6vw !important;
+        width: 55vw !important;
+        padding: 1vw !important;
+    }
+
+    #joinInput {
+        width: 65vw !important;
+        padding: 4vw !important;
+        font-size: 5vw !important;
+        margin: 5vw !important;
+        box-sizing: border-box;
+    }
+
+    .join-btn {
+        font-size: 5vw !important;
+        width: 65vw !important;
+        padding: 4vw !important;
+    }
+}

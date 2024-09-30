@@ -1,0 +1,106 @@
+/* .messageBox{
+    margin: 6px;
+    width: 40%;
+    padding: 4px;
+    border-radius: 3px;
+    /* text-align:; */
+    /* color: aliceblue;
+    display: inline-block;
+font-size:medium;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+background-color: rgb(153, 65, 255);
+border-color: rgb(35, 24, 46);
+border-bottom-right-radius: 10px;
+} */
+
+
+
+/* background-color: white; */
+/* width: 40%; */
+
+
+/* .messageBox{
+padding: 1vmax;
+margin: 8px;
+border-radius: 0.5vmax;
+display: inline-block;
+clear: both;
+font-size: 1.2vmax;
+
+}
+
+
+.right{
+
+    float: right;
+    background-color: #4f4646;
+    color: white;
+    text-align: right;
+}
+
+.left {
+    float: left;
+    background-color: #075E54;
+    color: white;
+    text-align: left;
+} */
+
+
+
+
+
+.messageBox {
+    padding: 1vmax;
+    margin: 8px;
+    border-radius: 0.5vmax;
+    display: inline-block;
+    clear: both;  /* Ensures no floating elements overlap */
+    font-size: 1.2vmax;
+    max-width: 80%;  /* Limit width for better readability */
+    word-wrap: break-word;  /* Break long words */
+}
+
+.right {
+    background-color: #4f4646;  /* Original color */
+    color: white;
+    text-align: right;
+    float: right;
+}
+
+.left {
+    background-color: #075E54;  /* Original color */
+    color: white;
+    text-align: left;
+    float: left;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .messageBox {
+        font-size: 4vw;  /* Adjust font size for smaller screens */
+        max-width: 90%;  /* Allow more width on smaller screens */
+    }
+}
+
+
+/* 
+.messageBox:hover {
+
+    transform: translateX(10px);
+    cursor:pointer;
+
+    /* transform:scaleZ() */
+
+
+/* }
+
+
+.messageBox:hover{
+    background-color: rgb(0, 0, 0);
+
+} */
+
+
+
+
+
