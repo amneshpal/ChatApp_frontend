@@ -133,6 +133,27 @@ cursor: pointer;
 
 
 
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .chatContainer {
+        width: 95%; /* Use more width on smaller screens */
+        height: 90%; /* Increase height for better usability */
+    }
+
+    .header > h2 {
+        font-size: 5vw; /* Responsive font size */
+    }
+
+    #chatInput {
+        padding: 1.5vmax; /* Adjust padding */
+        font-size: 4vw; /* Adjust font size */
+    }
+
+    .sendbtn {
+        width: 30%; /* Adjust button size */
+        font-size: 4vw; /* Adjust button font size */
+    }
+}
 
 
 

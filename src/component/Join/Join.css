@@ -1,86 +1,11 @@
-/* h1{
-    margin-top: 0px;
-}
-.JoinPage{
-    background-color: rgb(53, 48, 48);
-    width: 100wh;
-    height: 100vh;
-    display: flex;
-    justify-content: center;   
-    align-items: center;
-}
-
-.JoinContainer{
-
-    
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 180px;
-
-
-}
-
-
-.JoinContainer> h1{
-    color: aliceblue;
-    font-size: 2.5vmax;
-    width: 25vmax;
-    border-bottom: 0.2vmax solid white;
-    text-align: center;
-    padding: 1vmax;
-
-    font-family: "Roboto";
-    box-sizing: border-box;
-}
-
-.JoinContainer>img{
-
-width: 10vmax;
-
-
-}
-
-#joinInput{
-
-    width: 25vmax;
-    padding: 1.5vmax;
-    border: none;
-    outline: none;
-    font-size: 1.2vmax;
-    margin: 2vmax;
-    box-sizing: border-box;
-}
-
-
-.join-btn{
-
-    width: 25vmax;
-    padding: 1.5vmax;
-    border: none;
-    color: white;
-    font-family: "Roboto";
-    outline: none;
-    font-size: 1.2vmax;
-    background-color: crimson;
-    box-sizing: border-box;
-    transition: all 0.3s ;
-    cursor: pointer;
-}
-.join-btn:hover{
-    background-color: rgb(172, 81, 214);
-
-} */
-
 h1 {
     margin-top: 0;
 }
 
 .JoinPage {
     background-color: rgb(53, 48, 48);
-    width: 100vw;  /* Use vw instead of wh for width */
-    height: 100vh;
+    width: 100vw;  /* Full viewport width */
+    height: 100vh; /* Full viewport height */
     display: flex;
     justify-content: center;  /* Horizontally center */
     align-items: center;      /* Vertically center */
@@ -143,13 +68,26 @@ h1 {
 
 /* Responsive Styles */
 @media (max-width: 600px) {
+    .JoinContainer {
+        padding-bottom: 40px;  /* Reduce padding for smaller screens */
+    }
+
     .JoinContainer > h1 {
         font-size: 5vw;  /* Adjust font size for smaller screens */
     }
 
+    .JoinContainer > img {
+        width: 30vmax;  /* Larger image on smaller screens */
+    }
+
     #joinInput, .join-btn {
         width: 90%;  /* Adjust width for smaller screens */
+        max-width: none;  /* Remove max width for full responsiveness */
         font-size: 4vw;  /* Adjust font size */
+        padding: 2vmax;  /* Increase padding for touch targets */
+    }
+
+    .join-btn {
+        padding: 2vmax;  /* Increase button padding */
     }
 }
-

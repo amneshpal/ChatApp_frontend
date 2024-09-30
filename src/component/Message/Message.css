@@ -13,14 +13,12 @@ border-color: rgb(35, 24, 46);
 border-bottom-right-radius: 10px;
 } */
 
-
+/* .messageBox{ */
 
 /* background-color: white; */
 /* width: 40%; */
 
-
-/* .messageBox{
-padding: 1vmax;
+/* padding: 1vmax;
 margin: 8px;
 border-radius: 0.5vmax;
 display: inline-block;
@@ -33,17 +31,28 @@ font-size: 1.2vmax;
 .right{
 
     float: right;
-    background-color: #4f4646;
+    background-color: crimson;
     color: white;
     text-align: right;
 }
 
-.left {
+.left{
     float: left;
-    background-color: #075E54;
+    background-color: rgb(95, 240, 107);
     color: white;
     text-align: left;
+
 } */
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -58,6 +67,7 @@ font-size: 1.2vmax;
     font-size: 1.2vmax;
     max-width: 80%;  /* Limit width for better readability */
     word-wrap: break-word;  /* Break long words */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);  /* Add subtle shadow */
 }
 
 .right {
@@ -79,8 +89,25 @@ font-size: 1.2vmax;
     .messageBox {
         font-size: 4vw;  /* Adjust font size for smaller screens */
         max-width: 90%;  /* Allow more width on smaller screens */
+        padding: 2vmax;  /* Increase padding for better touch targets */
+        margin: 5px;  /* Reduce margin for a more compact layout */
+    }
+    
+    .right, .left {
+        float: none;  /* Reset float on smaller screens */
+        text-align: center;  /* Center align text */
     }
 }
+
+/* Optional Hover Effects */
+.messageBox:hover {
+    transform: translateY(-3px);  /* Slight lift effect */
+    cursor: pointer;
+    transition: transform 0.2s;  /* Smooth transition */
+}
+
+
+
 
 
 /* 
